@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 
 import re
-import sys
 from os import path
 from setuptools import setup, find_packages
 
@@ -29,10 +28,10 @@ with open(version_file, 'r') as fp:
 
 
 setup(
-    name='Flask-RESTful',
+    name='Flask-RESTful-TheodoFork',
     version=version,
     license='BSD',
-    url='https://www.github.com/flask-restful/flask-restful/',
+    url='https://www.github.com/theodo/flask-restful/',
     author='Twilio API Team',
     author_email='help@twilio.com',
     description='Simple framework for creating REST APIs',
@@ -51,7 +50,7 @@ setup(
     zip_safe=False,
     include_package_data=True,
     platforms='any',
-    test_suite = 'nose.collector',
+    test_suite='nose.collector',
     install_requires=requirements,
     tests_require=['Flask-RESTful', 'mock>=0.8', 'blinker'],
     # Install these with "pip install -e '.[docs]'
